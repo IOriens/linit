@@ -152,7 +152,7 @@ const addHook = ({ preHook, src, dest, afterHook, cwd }) => {
     pkgContent.scripts.precommit = 'lint-staged'
     pkgContent['lint-staged'] = {
       '*.{js,jsx,vue}': ['eslint --fix -c .eslintrc.js', 'git add'],
-      '*.ts': ['tslint --fix -c tslint.json', 'git add'],
+      '*.ts': ['tslint --fix -c tslint.json --force', 'git add'],
       '*.json': ['prettier --write', 'git add'],
       '*.css': ['stylelint --fix', 'git add'],
       '*.less': ['stylelint --fix --syntax=less', 'git add'],

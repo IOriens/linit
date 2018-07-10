@@ -1,5 +1,5 @@
 const defaultFixable = {
-  semi: ['error', 'always'],
+  semi: ['error', 'always']
   // "mocha/no-mocha-arrows": "error",
   // "mocha/handle-done-callback": "error",
   // "mocha/no-exclusive-tests": "error",
@@ -30,6 +30,7 @@ const vueWarnList = [
 const defaultWarnList = [
   'no-console',
   'no-unused-vars',
+  'no-empty',
   'no-undef',
   'no-unreachable',
   'no-useless-escape',
@@ -121,8 +122,20 @@ const eslintConfigPrettier = {
   'wrap-regex': 'off',
   'yield-star-spacing': 'off'
 }
+const prettierOpts = {
+  'prettier/prettier': [
+    'error',
+    { singleQuote: true, tabWidth: 4, useTabs: false }
+  ]
+}
 
-const rules = Object.assign({}, defaultFixable, nodeFixable, warnThem, eslintConfigPrettier)
+const rules = Object.assign(
+  {},
+  defaultFixable,
+  warnThem,
+  eslintConfigPrettier,
+  prettierOpts
+)
 
 module.exports = {
   root: true,
@@ -133,8 +146,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    // 'plugin:node/recommended',
     'plugin:prettier/recommended',
-    'plugin:node/recommended',
     'plugin:vue/essential'
   ],
   parserOptions: {
