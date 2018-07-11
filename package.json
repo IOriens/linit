@@ -1,7 +1,7 @@
 {
     "name": "linit",
     "version": "1.0.4",
-    "description": "",
+    "description": "A lint configs initiator, extracted from [bio](https://github.com/weidian-inc/bio-cli).",
     "main": "index.js",
     "bin": "./src/bin/cmd.js",
     "scripts": {

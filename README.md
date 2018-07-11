@@ -1,4 +1,5 @@
-# linit
+<p align="center"><img src="https://user-images.githubusercontent.com/8137136/42549502-16b26662-84ff-11e8-945e-3bac8a1a0672.png" alt="Vue logo"></p>
+<br>
 
 A lint configs initiator, extracted from [bio](https://github.com/weidian-inc/bio-cli).
 
