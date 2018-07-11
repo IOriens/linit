@@ -69,7 +69,6 @@ const eslintConfigPrettier = {
   'generator-star': 'off',
   'generator-star-spacing': 'off',
   'implicit-arrow-linebreak': 'off',
-  indent: 'off',
   'indent-legacy': 'off',
   'jsx-quotes': 'off',
   'key-spacing': 'off',
@@ -123,12 +122,18 @@ const eslintConfigPrettier = {
   'wrap-regex': 'off',
   'yield-star-spacing': 'off'
 }
-
+const prettierOpts = {
+  'prettier/prettier': [
+    'error',
+    { singleQuote: true, tabWidth: 4, useTabs: false }
+  ]
+}
 const rules = Object.assign(
   {},
   defaultFixable,
   warnThem,
-  eslintConfigPrettier
+  eslintConfigPrettier,
+  prettierOpts
 )
 
 module.exports = {
