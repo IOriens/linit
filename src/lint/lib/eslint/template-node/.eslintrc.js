@@ -34,7 +34,8 @@ const defaultWarnList = [
   'no-undef',
   'no-unreachable',
   'no-useless-escape',
-  'no-irregular-whitespace'
+  'no-irregular-whitespace',
+  'no-empty-pattern'
 ]
 
 const warnList = vueWarnList.concat(defaultWarnList)
@@ -147,6 +148,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     // 'plugin:node/recommended',
+    'plugin:import/errors',
     'plugin:prettier/recommended',
     'plugin:vue/essential'
   ],

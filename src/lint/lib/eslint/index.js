@@ -49,6 +49,7 @@ function installDependencies ({ type }) {
     'eslint-plugin-react',
     'eslint-plugin-vue',
     'eslint-config-vue',
+    'eslint-plugin-import',
     'eslint-plugin-prettier',
     'eslint-config-prettier',
     'prettier'
