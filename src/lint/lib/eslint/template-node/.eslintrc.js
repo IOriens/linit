@@ -42,7 +42,7 @@ const warnList = vueWarnList.concat(defaultWarnList)
 
 const warnThem = {
   'vue/html-indent': ['warn', 4],
-  indent: ['warn', 4]
+  indent: 'off' // close it, prettier will handle indentation formatting
 }
 
 for (var idx in warnList) {
