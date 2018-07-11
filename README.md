@@ -3,6 +3,9 @@
 
 A lint configs initiator, extracted from [bio](https://github.com/weidian-inc/bio-cli).
 
+```
+linit = eslint + tslint + prettier + stylelint + husky + lint-staged
+```
 ## Usage
 Just execute this command under your project's root directory.
 ```
