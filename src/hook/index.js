@@ -157,6 +157,7 @@ const addHook = ({ preHook, src, dest, afterHook, cwd }) => {
         'prettier --write',
         'git add'
       ],
+      "*.vue": ["stylelint --fix", "git add"],
       '*.json': ['prettier --write', 'git add'],
       '*.css': ['stylelint --fix', 'git add'],
       '*.less': ['stylelint --fix --syntax=less', 'git add'],
