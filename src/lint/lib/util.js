@@ -54,6 +54,7 @@ function confirm (fileName) {
 
 async function copyTpt (tptDir, targetDir) {
   const tptFiles = fs.readdirSync(tptDir)
+  console.log('tptDir', tptDir)
   let fileName
 
   for (let i = 0, len = tptFiles.length; i < len; i++) {
