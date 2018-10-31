@@ -40,8 +40,8 @@ const defaultWarnList = [
 const warnList = vueWarnList.concat(defaultWarnList)
 
 const warnThem = {
-  'vue/html-indent': ['warn', 4],
-  indent: ['warn', 4]
+  'vue/html-indent': ['warn', 2],
+  indent: ['warn', 2]
 }
 
 for (var idx in warnList) {

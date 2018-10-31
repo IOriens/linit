@@ -41,7 +41,7 @@ const defaultWarnList = [
 const warnList = vueWarnList.concat(defaultWarnList)
 
 const warnThem = {
-  'vue/html-indent': ['warn', 4],
+  'vue/html-indent': ['warn', 2],
   indent: 'off' // close it, prettier will handle indentation formatting
 }
 
@@ -125,7 +125,7 @@ const eslintConfigPrettier = {
 const prettierOpts = {
   'prettier/prettier': [
     'error',
-    { singleQuote: true, tabWidth: 4, useTabs: false }
+    { singleQuote: true, tabWidth: 2, useTabs: false }
   ]
 }
 const rules = Object.assign(

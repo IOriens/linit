@@ -16,7 +16,7 @@ module.exports = {
       }
     ],
     indentation: [
-      4,
+      2,
       {
         severity: 'warning'
       }
