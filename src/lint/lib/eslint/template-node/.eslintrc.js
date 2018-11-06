@@ -24,7 +24,9 @@ const nodeFixable = {
 const vueWarnList = [
   'vue/require-v-for-key',
   'vue/valid-v-for',
-  'vue/no-unused-vars'
+  'vue/no-unused-vars',
+  'require-yield',
+  'vue/no-parsing-error'
 ]
 
 const defaultWarnList = [
